@@ -271,7 +271,6 @@ export type Play = {
   out: boolean;
   category: Category;
   close: boolean;
-  veryClose: boolean;
   tPitch: number; // 投球のリリース
   pitchFrom: Vec3;
   tHit: number;
@@ -468,7 +467,6 @@ export function generatePlay(rng: Rng, index: number, force: Force = {}, correct
       out: margin > 0,
       category,
       close: Math.abs(margin) <= closeMax, // 際どいかどうかは差の大きさだけで決める
-      veryClose: Math.abs(margin) < GAME.veryCloseMargin,
       tPitch: tHit - 0.5,
       pitchFrom,
       tHit,

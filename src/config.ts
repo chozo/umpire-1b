@@ -39,7 +39,6 @@ export const GAME = {
   callDisplay: 1.0,
   resultDisplay: 1.3,
   replaySkipGuard: 0.4,
-  veryCloseMargin: 0.02,
 };
 
 // 段階（何プレー目から）
